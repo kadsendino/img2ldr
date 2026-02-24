@@ -1,0 +1,35 @@
+[tasks.depedencies]
+script = [
+  "sudo pacman -S jq",
+  "cargo install cargo-aur"
+]
+
+[tasks.package-arch]
+description = "Build Arch/Artix package using cargo-aur"
+script = '''
+set -e
+
+PKG_NAME=$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[0].name')
+PKG_VER=$(cargo metadata --no-deps --format-version 1 | jq -r '.packages[0].version')
+
+cargo build --release
+cargo aur
+
+# remove -bin suffix from pkgname
+sed -i "s/^pkgname=.*/pkgname=${PKG_NAME}/" target/cargo-aur/PKGBUILD
+sed -i 's/-bin//g' target/cargo-aur/PKGBUILD
+
+cd target/cargo-aur
+
+# build without installing
+makepkg -fs --noconfirm
+
+cd ../..
+
+mkdir -p target/release
+cp target/cargo-aur/${PKG_NAME}-${PKG_VER}-*-x86_64.pkg.tar.zst target/release/${PKG_NAME}-${PKG_VER}-x86_64.pkg.tar.zst
+cp target/cargo-aur/${PKG_NAME}-${PKG_VER}-x86_64.tar.gz target/release/
+'''
+
+
+
