@@ -78,4 +78,3 @@ This example is from [Wikipedia](https://en.wikipedia.org/wiki/LDraw#Specificati
 
 0 STEP
 ```
-
