@@ -14,14 +14,14 @@ For more information as described here see the official [LDraw Specification](ht
 0 Step
 ...
 ```
-```
-```
 
 ### Header
 
+```
 0 title_text
 0 Name: filename.ldr
 0 Author: author_name
+```
 
 ### Step
 
