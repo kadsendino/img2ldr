@@ -46,6 +46,8 @@ For Color definition see at the LDraw specification. [LDraw Colors](https://ldra
 
 ## Example
 
+This example is from [Wikipedia](https://en.wikipedia.org/wiki/LDraw#Specification).
+
 ```
 0 Example Pyramid for Demonstration of LDRAW Library
 0 Name: pyramid.ldr
