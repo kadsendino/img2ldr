@@ -9,9 +9,9 @@ For more information as described here see the official [LDraw Specification](ht
 ```
 # Header
 # First Step
-0 Step
+0 STEP
 # Secound Step
-0 Step
+0 STEP
 ...
 ```
 
