@@ -42,7 +42,7 @@ Where `a b c d e f g h i` represents the rotational matrix:
 
 #### Color
 
-For Color definition see at the LDraw specification. [LDraw Colors](https://ldraw.org/article/547.html).
+For color definition see at the [LDraw Colors](https://ldraw.org/article/547.html).
 
 ## Example
 
