@@ -6,6 +6,7 @@ repository = "https://github.com/kadsendino/img2ldr"
 website = "https://github.com/kadsendino/img2ldr"
 version = "0.1.0"
 edition = "2024"
+license = "GPL-3"
 
 [dependencies]
 fast_image_resize = { version = "6", features = ["image"] }
