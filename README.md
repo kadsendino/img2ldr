@@ -13,7 +13,7 @@ pacman -U img2ldr-0.1.0-x86_64.pkg.tar.zst
 
 ```
 tar -xzf img2ldr-0.1.0-x86_64.tar.gz
-./spotify-visualizer
+./img2ldr
 ```
 
 ### Build From Source
