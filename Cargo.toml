@@ -1,5 +1,9 @@
 [package]
 name = "img2ldr"
+authors = ["Kadsendino"]
+description = "Converts an image to an ldraw file for creating brick art."
+repository = "https://github.com/kadsendino/img2ldr"
+website = "https://github.com/kadsendino/img2ldr"
 version = "0.1.0"
 edition = "2024"
 
